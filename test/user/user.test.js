@@ -22,42 +22,4 @@ describe('[STUDENTS] /api/students Testing', () => {
         done();
       })
   });
-
-  // it('should not be able to sign up if any inputs are empty', (done) => {
-  //   request(app)
-  //     .post('/api/users')
-  //     .send({
-  //       username: '',
-  //       email: 'olala@cc.cc',
-  //       password:'Pass123!'
-  //     })
-  //     .set('Accept', 'application/json')
-  //     .expect('Content-Type', /json/)
-  //     .expect(422)
-  //     .end((err, res) => {
-  //       expect(res.body).to.be.an('object');
-  //       expect(res.body).to.have.property('error');
-  //       expect(res.body).to.have.deep.property('error', 'Username, email, and password are required.');
-  //       done();
-  //     })
-  // });
-
-  // it('should not be able to sign up a user with same email', (done) => {
-  //   request(app)
-  //     .post('/api/users')
-  //     .send({
-  //       username: 'kevin',
-  //       email: 'alice@cc.cc',
-  //       password: 'Pass123!'
-  //     })
-  //     .set('Accept', 'application/json')
-  //     .expect('Content-Type', /json/)
-  //     .expect(422)
-  //     .end((err, res) => {
-  //       expect(res.body).to.be.an('object');
-  //       expect(res.body).to.have.property('error');
-  //       expect(res.body).to.have.deep.property('error', 'The email is already registered.');
-  //       done();
-  //     })
-  // });
 })
